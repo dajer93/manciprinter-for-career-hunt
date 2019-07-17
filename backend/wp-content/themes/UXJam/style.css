@@ -1,0 +1,771 @@
+/*
+ Theme Name:     Vas Manci by UX Jam
+ Theme URI:      https://www.uxjam.hu/theme
+ Description:    Vas Manci by UX Jam
+ Author:         UX Jam
+ Author URI:     https://www.uxjam.hu
+ Template:       Divi
+ Version:        1.0.0
+*/
+ 
+@import url("../Divi/style.css");
+ 
+/* HEADER STYLES
+------------------------------------------------------- */
+body{
+    font-weight: 400!important;
+}
+
+#main-header, .logo_container{
+    height: 84px!important;
+}
+
+#page-container header#main-header{ 
+	box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6), inset 0 -1px 1px rgba(0, 0, 0, 0.6), 0 0 5px rgba(0, 0, 0, 0.6)!important;
+}
+
+#jam-header h1:after{
+	content: '';
+    border-bottom: 4px solid #c5ab6b;
+    width: 50px;
+    height: 4px;
+    display: block;
+    margin: 8px auto -4px auto;
+}
+@media only screen and (max-width: 980px){
+    .jam-header-button-container{
+        display: none!important;
+    }
+    .jam-toggle-menu{
+        top:3px;
+    }
+}
+.jam-header-button-container{
+	display: flex;
+    position: absolute;
+    top: 28px;
+    right: 45px;
+}
+.jam-header-button-container .jam-reservation{
+	color: #303030;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: .1em 1em;
+    border: 2px solid;
+    margin: 0 10px;
+    position: relative;
+    top:-2px;
+}
+.jam-header-button-container .jam-reservation:hover{
+	/*background-color: rgba(47,48,49,0.1)!important;
+	border:2px solid transparent;*/
+	box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
+}
+.jam-header-button-container .jam-menu{
+	color: #303030;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: .1em 1em;
+	margin: 0 10px;
+	border:2px solid transparent;
+    position: relative;
+    top:-2px;
+}
+/*.jam-header-button-container .jam-menu:hover{
+	color: rgba(47,48,49,0.8)!important;
+}*/
+.jam-header-button-container .jam-menu:before{
+	content: '';
+    display: inline-block;
+    border-left: 1px solid black;
+    width: 1px;
+    height: 44px;
+    position: absolute;
+    top: -12px;
+    left: -18px;
+}
+.jam-header-button-container .jam-social{
+	position: relative;
+    width: 24px;
+    height: 20px;
+    display: inline-block;
+    margin: 0px 8px;
+}
+.jam-header-button-container .jam-social.last{
+	margin-right: 32px!important;
+}
+
+/* SIDEMENU STYLES
+------------------------------------------------------- */
+.jam-toggle-menu{
+    display: inline-block;
+    width: 32px;
+    cursor: pointer;
+    position: relative;
+    line-height: 0;
+}
+.jam-toggle-menu:after{
+    content: "\61"!important;
+    color: #303030;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 32px;
+    cursor: pointer;
+    text-shadow: 0 0;
+    font-family: ETmodules!important;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+    text-transform: none;
+    speak: none;
+}
+.jam-toggle-menu.close{
+    width: 80px;
+    margin-left: 175px;
+    top:10px;
+}
+.jam-toggle-menu.close:after{
+    content: "M"!important;
+    color: white;
+    font-size: 80px;
+}
+
+.jam-sidemenu-mid{
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid white;
+
+    width: 320px;
+    margin-left: 40px;
+
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid white;
+}
+#top-menu{
+    display: block!important;
+    line-height: 2em;
+    float:none!important;
+}
+#top-menu li{
+    display: block!important;
+}
+#top-menu li.menu-item > a,
+#top-menu li.current-menu-item > a{
+    color:white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    transition: color .2s ease-in-out;
+}
+#top-menu li a:hover{
+    color:rgba(255,255,255,0.6);
+}
+
+#sidemenu-logo{
+    height: 50px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+.jam-sidemenu-facebook{
+    content: url(/wp-content/uploads/2018/05/facebook.png);
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    padding: 10px;
+    background-color: white;
+    margin-top: 40px;
+    margin-left: 60px;
+    transition: background-color .2s ease-in-out;
+}
+.jam-sidemenu-instagram{
+    content: url(/wp-content/uploads/2018/06/instagram.png);
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    padding: 10px;
+    background-color: white;
+    margin-top: 40px;
+    transition: background-color .2s ease-in-out;
+}
+.jam-sidemenu-tripadvisor{
+    content: url(/wp-content/uploads/2018/05/tripadvisor.png);
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    padding: 10px;
+    background-color: white;
+    margin-top: 40px;
+    margin-left: 120px;
+    transition: background-color .2s ease-in-out;
+}
+.jam-sidemenu-facebook:hover,
+.jam-sidemenu-instagram:hover,
+.jam-sidemenu-tripadvisor:hover{
+    background-color: rgba(255,255,255,.8);
+}
+
+.jam-sidemenu{
+    position: fixed;
+    right: -400px;
+    top: 0;
+    z-index: 999999;
+    height: 100vh;
+    width: 400px;
+    background-color: #2f3031;
+    transition: right .4s ease-in-out;
+}
+.jam-sidemenu.show{
+    right: 0px;
+}
+
+.jam-menu-overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999998;
+    height: 100vh;
+    width: 100vw;
+    background-color: #2f3031;
+    opacity: 0;
+    display: none;
+    transition: opacity .4s ease-in-out;
+    display: none;
+}
+.jam-menu-overlay.show{
+    opacity: 0.6;
+    display: block;
+}
+
+.jam-sidemenu-bottom{
+    width: 320px;
+    margin-left: 40px;
+}
+.jam-sidemenu-bottom h3{
+    color:#d7cda3!important;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+}
+.jam-sidemenu-bottom h3.last{
+    padding-top:20px;
+}
+.jam-sidemenu-bottom span{
+    color:white!important;
+    font-size: 16px;
+}
+.span-right{
+    float:right;
+}
+@media only screen and (max-width: 400px){
+    .jam-toggle-menu.close{
+        width: 60px;
+        margin-left: 130px;
+        top:7px;
+    }
+    .jam-toggle-menu.close:after{
+        content: "M"!important;
+        color: white;
+        font-size: 60px;
+    }
+    .jam-sidemenu-mid{
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 2px solid white;
+
+        width: 240px;
+        margin-left: 40px;
+
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid white;
+    }
+    #sidemenu-logo{
+        height: 40px;
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-right: 5px;
+    }
+    .jam-sidemenu-facebook{
+        content: url(/wp-content/uploads/2018/05/facebook.png);
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        position: absolute;
+        padding: 10px;
+        background-color: white;
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+    .jam-sidemenu-instagram{
+        content: url(/wp-content/uploads/2018/06/instagram.png);
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        position: absolute;
+        padding: 10px;
+        background-color: white;
+        margin-top: 40px;
+    }
+    .jam-sidemenu-tripadvisor{
+        content: url(/wp-content/uploads/2018/05/tripadvisor.png);
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        position: absolute;
+        padding: 10px;
+        background-color: white;
+        margin-top: 40px;
+        margin-left: 100px;
+    }
+    .jam-sidemenu{
+        position: fixed;
+        right: -320px;
+        top: 0;
+        z-index: 999999;
+        height: 100vh;
+        width: 320px;
+        background-color: #2f3031;
+        transition: right .4s ease-in-out;
+    }
+    .jam-sidemenu-bottom{
+        width: 240px;
+        margin-left: 40px;
+    }
+}
+
+
+/* SOCIAL ICON STYLES
+------------------------------------------------------- */
+.jam-facebook{
+	content: url(/wp-content/uploads/2018/05/facebook.png);
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: absolute;
+}
+.jam-instagram{
+    content: url(/wp-content/uploads/2018/06/instagram.png);
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    position: absolute;
+    left:-2px;
+}
+.jam-tripadvisor{
+	content: url(/wp-content/uploads/2018/05/tripadvisor.png);
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: absolute;
+}
+
+/* BUTTON HOVER
+------------------------------------------------------- */
+.et_pb_button:hover{
+	box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+/* HEADER UNDERLINE 
+------------------------------------------------------- */
+.jam-text-heading h2:after{
+	content: '';
+    border-bottom: 4px solid #c5ab6b;
+    width: 50px;
+    height: 4px;
+    display: block;
+    margin: 8px auto 16px auto;
+}
+
+/* FOOTER STYLES
+------------------------------------------------------- */
+#jam-footer-info table{
+	border: 0!important;
+	width: 300px!important;
+}
+#jam-footer-info table tr td:first-child{
+	width:40%!important;
+}
+#jam-footer-info table tr td{
+	border: 0!important;
+	padding-left:0!important;
+    max-width: 100px;
+}
+.jam-footer-social{
+	display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    padding: 8px;
+    margin: 0 8px 0 0;
+    transition: background-color .2s ease-in-out;
+}
+.jam-footer-social:hover{
+	background-color: rgba(255,255,255,.8);
+}
+
+#footer-info{
+	float:right!important;
+}
+
+#footer-info a{
+	font-weight:normal!important;
+}
+
+/* JAM MENU STYLES
+------------------------------------------------------- */
+.jam-menu-header h2{
+    padding-top: 20px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: .2em;
+}
+.jam-menu-header h2:after{
+    content:'';
+    border-bottom:3px solid white;
+    width: 40px;
+    height: 4px;
+    display: block;
+    margin: 4px auto 4px 0;
+}
+.jam-menu-title{
+    max-width: 65%;
+    padding-top: 18px;
+    padding-left: 20px;
+    float:left;
+}
+.jam-menu-title h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top:0!important;
+    line-height: 1.2em;
+}
+.jam-menu-price{
+    float:right;
+    padding-top: 18px;
+    padding-right: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2em;
+}
+.jam-menu-bottom{
+    clear:both;
+    padding-right: 120px;
+}
+.jam-menu-content{
+    margin: 0 20px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid white;
+}
+.jam-menu-item:last-child .jam-menu-content{
+    border:0!important;
+    padding-bottom:20px!important;
+}
+.jam-menu-item{
+    position: relative;
+}
+.jam-menu-content p{
+    font-size: 12px;
+    line-height: 1.4em;
+    /*padding-right: 50px;*/
+}
+
+/* MENU PAGE STYLES
+------------------------------------------------------- */
+.jam-menu-page .jam-menu-title{
+    padding-left:0;
+}
+.jam-menu-page .jam-menu-price{
+    padding-right: 0;
+}
+.jam-menu-page .jam-menu-content{
+    margin:0;
+}
+.jam-menu-page .jam-menu-item{
+    width: 48%;
+    height: 126px;
+    float: left;
+    border-top:1px solid black;
+}
+.jam-menu-page .jam-menu-item:nth-child(1),
+.jam-menu-page .jam-menu-item:nth-child(2){
+    border: 0!important;
+}
+.jam-menu-page .jam-menu-item:nth-of-type(even){
+    margin-left:4%;
+}
+
+.jam-menu-page .jam-menu-content.with-image{
+    width:95%;
+    float:left;
+}
+.jam-menu-page .jam-menu-image{
+    width: 120px;
+    float: left;
+    max-height: 70px;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+
+/* FOOD PAGE STYLES
+------------------------------------------------------- */
+
+.jam-food-page .jam-food-bottom-upsale{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 80px 10% 80px 10%;
+    display: inline-table;
+}
+.jam-food-top-bg{
+    width: 100%;
+    height: 70px;
+    background-image: url(/wp-content/uploads/2018/05/manci-artdeco-up_2.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.jam-food-bottom-bg{
+    width: 100%;
+    height: 70px;
+    background-image: url(/wp-content/uploads/2018/05/manci-artdeco-down_2.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    clear: both;
+}
+.jam-food:not(.jam-food-left){
+    width: 100%;
+    padding: 0 10%;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.jam-food-left{
+    width: 48%;
+    padding-left: 10%;
+    margin-right: 2%;
+    border-left: 2px solid black;
+    float: left;
+}
+.jam-food-right{
+    width: 48%;
+    padding-right: 10%;
+    margin-left: 2%;
+    float: left;
+    border-right: 2px solid black;
+    background-color: white;
+    overflow: hidden;
+}
+.jam-food-right img{
+    max-height: 300px;
+    width: auto;
+    margin: 0 auto;
+    display: inherit;
+}
+
+@media only screen and (max-width: 991px){
+    .jam-food-right img{
+        margin: 0 auto 0 0;
+    }
+}
+
+
+.jam-food-title h1{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.jam-food-title h1:after{
+    content: '';
+    border-bottom: 4px solid #c5ab6b;
+    width: 50px;
+    height: 4px;
+    display: block;
+    margin: 8px auto 16px 0;
+}
+.jam-food-desc p{
+    color: #878787;
+    font-size: 18px;
+}
+.jam-food-price{
+    text-align: right;
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid;
+    margin-bottom: 20px;
+}
+.jam-food-go-back{
+    margin-top: 40px;
+}
+.jam-food-go-back a{
+    text-transform: uppercase;
+    color: white;
+    background-color: #2f3031;
+    padding: .5em 1em!important;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all .2s ease-in-out;
+    line-height: 1.7em!important;
+    border-radius: 1px;
+}
+.jam-food-go-back a:hover{
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+.jam-food-meta{
+    font-size: 18px;
+}
+
+.jam-food-meta ul{
+    list-style: disc!important;
+    margin-left: 20px;
+}
+
+.jam-flex{
+    display: flex;
+}
+
+/* RESPONSIVE STYLES
+------------------------------------------------------- */
+@media only screen and (max-width: 767px){
+    #about, #menu, #jam-menu-container, .et_pb_row{
+        border-width: 0!important;
+        background-image: none!important;
+        width: 94%!important;
+        padding-left: 3%!important;
+        padding-right: 3%!important;
+    }
+    h1{
+        font-size: 32px!important;
+    }
+    .et_pb_text_inner h2{
+        font-size: 18px!important
+    }
+    #jam-header .et_pb_header_content_wrapper{
+        line-height: 1em!important;
+    }
+}
+@media only screen and (max-width: 991px){
+    .jam-menu-page .jam-menu-item{
+        width:100%;
+        float:none;
+        margin-left: 0!important;
+    }
+    .jam-food-top-bg,
+    .jam-food-bottom-bg{
+        display: none;
+    }
+    .jam-food, .jam-food-left{
+        border:0!important;
+        width: 100%;
+        float:none;
+        padding-left: 0;
+        margin-right: 0;
+    }
+    .jam-food-right{
+        border:0!important;
+        width:100%;
+        float:none;
+        padding-right: 0;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .jam-flex{
+        display: block;
+    }
+    .jam-food-page .jam-food-bottom-upsale{
+        border-width: 0;
+        padding: 20px 0;
+    }
+    .jam-menu-page .jam-menu-item:nth-child(2){
+        border-top: 1px solid black!important;
+    }
+}
+
+.pum .pum-container .pum-title{
+    text-transform: uppercase;
+}
+.pum .pum-container .pum-title:after{
+    content: '';
+    border-bottom: 4px solid white;
+    width: 50px;
+    height: 4px;
+    display: block;
+    margin: 8px auto 16px 0;
+}
+
+.lang-switcher li a{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    transition: color .2s ease-in-out;
+    position: relative;
+    top: 18px;
+    left: 20px;
+}
+
+.et_pb_slide, .et_pb_slides, #jam-menu-slider{
+    height: 100%;
+}
+
+ .et_pb_fullwidth_header .et_pb_fullwidth_header_container.left .header-content{
+    margin:0!important;
+}
+.single-project #main-content .container{
+    padding: 25px 0;
+}
+.single-project #main-content .container:before{
+    display: none;
+}
+
+.scroll-down {
+    position: relative;
+    -webkit-animation: shake 5s ease-in-out infinite;
+            animation: shake 5s ease-in-out infinite;
+}
+
+@-webkit-keyframes shake{
+    0% { top: 0px;}
+    5%{  top: 4px;}
+    10%{ top: -4px}
+    15%{ top: 2px;}
+    20%{ top: -2px; }
+    25%{ top: 0px; }
+    100%{ top: 0px;}
+}
+@-moz-keyframes shake{
+    0% { top: 0px;}
+    5%{  top: 4px;}
+    10%{ top: -4px}
+    15%{ top: 2px;}
+    20%{ top: -2px; }
+    25%{ top: 0px; }
+    100%{ top: 0px;}
+}
+@keyframes shake{
+    0% { top: 0px;}
+    5%{  top: 4px;}
+    10%{ top: -4px}
+    15%{ top: 2px;}
+    20%{ top: -2px; }
+    25%{ top: 0px; }
+    100%{ top: 0px;}
+}
+
+

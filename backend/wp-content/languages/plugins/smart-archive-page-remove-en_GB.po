@@ -1,0 +1,128 @@
+# Translation of Plugins - smart Archive Page Remove - Stable (latest release) in English (UK)
+# This file is distributed under the same license as the Plugins - smart Archive Page Remove - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-11-16 20:13:03+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: en_GB\n"
+"Project-Id-Version: Plugins - smart Archive Page Remove - Stable (latest release)\n"
+
+#: inc/class-smart-archive-page-remove.php:405
+msgid "If you like the smart Archive Page Remove plugin please support my work with giving it a good rating so that other users know it is helpful for you. Thanks."
+msgstr "If you like the smart Archive Page Remove plugin please support my work with giving it a good rating so that other users know it is helpful for you. Thanks."
+
+#. Author of the plugin/theme
+msgid "Peter Raschendorfer"
+msgstr "Peter Raschendorfer"
+
+#: inc/class-smart-archive-page-remove.php:390
+msgid "Follow me:"
+msgstr "Follow me:"
+
+#: inc/class-smart-archive-page-remove.php:390
+msgid "Do you like the smart Archive Page Remove plugin?"
+msgstr "Do you like the smart Archive Page Remove plugin?"
+
+#: inc/class-smart-archive-page-remove.php:291
+msgid "Contact Author"
+msgstr "Contact Author"
+
+#: inc/class-smart-archive-page-remove.php:291
+msgid "Support"
+msgstr "Support"
+
+#: inc/class-smart-archive-page-remove.php:291
+msgid "wordpress.org plugin directory"
+msgstr "WordPress.org plugin directory"
+
+#: inc/class-smart-archive-page-remove.php:291
+#: inc/class-smart-archive-page-remove.php:375
+#: inc/class-smart-archive-page-remove.php:405
+msgid "Please rate plugin"
+msgstr "Please rate plugin"
+
+#. Author URI of the plugin/theme
+msgid "https://petersplugins.com"
+msgstr "https://petersplugins.com"
+
+#. Description of the plugin/theme
+msgid "Completely remove unwanted Archive Pages from your Blog"
+msgstr "Completely remove unwanted Archive Pages from your Blog"
+
+#. Plugin URI of the plugin/theme
+msgid "https://petersplugins.com/free-wordpress-plugins/smart-archive-page-remove/"
+msgstr "https://petersplugins.com/free-wordpress-plugins/smart-archive-page-remove/"
+
+#. Plugin Name of the plugin/theme
+msgid "smart Archive Page Remove"
+msgstr "smart Archive Page Remove"
+
+#: inc/class-smart-archive-page-remove.php:375
+msgid "Settings"
+msgstr "Settings"
+
+#: inc/class-smart-archive-page-remove.php:291
+#: inc/class-smart-archive-page-remove.php:390
+msgid "Authors facebook Page"
+msgstr "Author's Facebook Page"
+
+#: inc/class-smart-archive-page-remove.php:291
+#: inc/class-smart-archive-page-remove.php:390
+msgid "Authors Google+ Page"
+msgstr "Author's Google+ Page"
+
+#: inc/class-smart-archive-page-remove.php:291
+msgid "Author homepage"
+msgstr "Author homepage"
+
+#: inc/class-smart-archive-page-remove.php:284
+msgid "You do not have sufficient permissions to access this page."
+msgstr "You do not have sufficient permissions to access this page."
+
+#: inc/class-smart-archive-page-remove.php:250
+msgid "Archive Pages"
+msgstr "Archive Pages"
+
+#: inc/class-smart-archive-page-remove.php:240
+msgid "Remove the following Archive Pages"
+msgstr "Remove the following Archive Pages"
+
+#: inc/class-smart-archive-page-remove.php:230
+msgid "e.g."
+msgstr "e.g."
+
+#: inc/class-smart-archive-page-remove.php:183
+msgid "my-tag"
+msgstr "my-tag"
+
+#: inc/class-smart-archive-page-remove.php:172
+msgid "my-category"
+msgstr "my-category"
+
+#: inc/class-smart-archive-page-remove.php:162
+msgid "Yearly Archive Page"
+msgstr "Yearly Archive Page"
+
+#: inc/class-smart-archive-page-remove.php:161
+msgid "Monthly Archive Page"
+msgstr "Monthly Archive Page"
+
+#: inc/class-smart-archive-page-remove.php:160
+msgid "Daily Archive Page"
+msgstr "Daily Archive Page"
+
+#: inc/class-smart-archive-page-remove.php:159
+msgid "Tag Archive Page"
+msgstr "Tag Archive Page"
+
+#: inc/class-smart-archive-page-remove.php:158
+msgid "Category Archive Page"
+msgstr "Category Archive Page"
+
+#: inc/class-smart-archive-page-remove.php:157
+msgid "Author Archive Page"
+msgstr "Author Archive Page"

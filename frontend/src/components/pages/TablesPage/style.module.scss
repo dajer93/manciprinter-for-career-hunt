@@ -1,0 +1,16 @@
+.button {
+  margin: 10% auto 0 auto !important;
+  display: block !important;
+  width: 310px;
+  text-align: center;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: #c5ab6b;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.container {
+  padding: 40px 20px;
+}

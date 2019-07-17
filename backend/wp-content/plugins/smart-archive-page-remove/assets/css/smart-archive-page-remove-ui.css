@@ -1,0 +1,20 @@
+.smart-archive-page-remove .form-table th, .form-table td {
+  display: block;
+  width: auto;
+}
+
+.smart-archive-page-remove .form-table th {
+  padding: 0;
+  font-weight: normal;
+}
+
+.smart-archive-page-remove .form-table td {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.smart-archive-page-remove .form-table td p {
+  padding: 0;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}

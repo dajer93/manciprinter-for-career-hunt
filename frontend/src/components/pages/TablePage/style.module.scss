@@ -1,0 +1,56 @@
+.right {
+  padding: 0 20px;
+}
+
+.Orders {
+  // box-shadow: 0 1px 4px rgba(51, 51, 51, 0.2);
+  background-color: #f4f4f4;
+}
+
+.OrderNav {
+  & > div {
+    padding: 20px;
+    position: relative;
+    display: inline-block;
+  }
+}
+
+.CategoriesAndFoods {
+  padding: 20px;
+}
+
+.back,
+.tableName {
+  font-size: 24px;
+}
+
+.back {
+  text-align: left !important;
+  vertical-align: middle;
+  cursor: default;
+  padding-left: 30px;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-left: 4px solid var(--mainColor);
+    border-bottom: 4px solid var(--mainColor);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    left: 28px;
+    top: 31px;
+  }
+}
+
+.tableName {
+  text-align: left !important;
+  font-weight: 600 !important;
+}

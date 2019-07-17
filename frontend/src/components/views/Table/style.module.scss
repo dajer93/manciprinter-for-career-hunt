@@ -1,0 +1,36 @@
+.isTaken {
+  background-color: rgba(51, 51, 51, 0.2);
+
+  & p {
+    font-weight: 600 !important;
+  }
+}
+
+.link {
+  color: var(--mainColor);
+  border-radius: 0;
+  text-decoration: none;
+
+  & > div {
+    border-radius: 0;
+    border: 2px solid var(--mainColor);
+    transition: 0.2s ease all;
+    box-shadow: none;
+  }
+
+  & > div > div {
+    border-radius: 0 !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  & > div:hover {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  & div p {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--mainColor);
+  }
+}

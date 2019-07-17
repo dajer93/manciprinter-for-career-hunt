@@ -1,0 +1,22 @@
+.top {
+  padding-bottom: 30px;
+
+  & p {
+    padding-top: 20px;
+  }
+}
+
+.input {
+  width: 100%;
+
+  & input {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+
+    &:focus {
+      border-color: transparent !important;
+      box-shadow: none !important;
+    }
+  }
+}
