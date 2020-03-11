@@ -1,5 +1,10 @@
 
 # Order Management
+In this project we (UX Jam) created an order management plugin for a Wordpress based restaurant website. 
+
+The plugin adds an admin interface, where the user can place orders for tables, manage these orders (add foods, comment, increment/decrement quantity, calculate price, ect.), print a receipt, and close the order. 
+
+In case of emergency (restaurant laptop broken / no wifi) one can open up the actual orders on phone with a pincode secured public URL.
 ## Configuration
 In order to make this work, you need to create a `.env` file in the frontend folder (project_root/frontend). The `.env` should contain the following variables:
 ```
