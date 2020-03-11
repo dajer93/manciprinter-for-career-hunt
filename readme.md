@@ -1,14 +1,11 @@
-1. React + Wordpress
-2. Minimal framework complexity (no TS, no Sagas etc.)
-3. No CD
-4. Server save with throttled function calls on every action 
-5. App state is sent in stringified
-6. No auth
-7. No internet / request error check
-8. 3 end-points for food, save state, get last state
 
-
-# API Endpoints
+# Order Management
+## Configuration
+In order to make this work, you need to create a `.env` file in the frontend folder (project_root/frontend). The `.env` should contain the following variables:
+```
+REACT_APP_API_URL=[url of the WP json api]
+REACT_APP_WP_ADMIN_URL=[url of the WP admin]
+```
 ## Get foods
 Route
 ```
