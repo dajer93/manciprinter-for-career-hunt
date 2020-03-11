@@ -6,7 +6,8 @@ In order to make this work, you need to create a `.env` file in the frontend fol
 REACT_APP_API_URL=[url of the WP json api]
 REACT_APP_WP_ADMIN_URL=[url of the WP admin]
 ```
-## Get foods
+## API
+### Get foods
 Route
 ```
 GET /wp-json/order-management/foods
@@ -24,14 +25,15 @@ const food = {
   }
 };
 ```
-## Set state
+### Set state
 Route
 ```
 POST /wp-json/order-management/state
 ```
 Expects form-data `state: "stringified json"`.
+Saves the state stringified in a WP option record.
 Returns boolean whether the request was successful.
-## Get state
+### Get state
 Route
 ```
 GET /wp-json/order-management/state
